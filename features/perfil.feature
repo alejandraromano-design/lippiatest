@@ -1,8 +1,8 @@
 @Web @Profile @Profile @Regression @ModuloC
 Feature: Validacion de datos de perfil
 
-  @Smoke @Automated
-  Scenario Outline: Visualizar el perfil del usuario <usuario>
+  @Smoke @Automated 
+  Scenario Outline: Visualizar el perfil del usuario <usuario> ale prueba
     Given el cliente se loguea con el usuario de <usuario>
     And el cliente hace click en el menu del avatar
     When se dirige al desplegable Perfil
@@ -189,4 +189,5 @@ Feature: Validacion de datos de perfil
     @EN
     Examples:
       | nombre      | apellido       | username        | idioma |
+
       | Doña Marisa | Ñáñez Añoranza | DoñaMarisaÑáñez | EN     |
